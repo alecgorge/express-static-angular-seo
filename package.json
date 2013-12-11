@@ -1,6 +1,6 @@
 {
   "name": "express-static-angular-seo",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "A simple reverse proxy that takes any URL and uses PhantomJS to fetch a version that has the JavaScript executed. Set the Host HTTP header to use this for more than one domain.",
   "main": "server.coffee",
   "author": "Alec Gorge <alecgorge@gmail.com>",
