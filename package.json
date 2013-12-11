@@ -1,0 +1,29 @@
+{
+  "name": "express-static-angular-seo",
+  "version": "0.1.0",
+  "description": "A simple reverse proxy that takes any URL and uses PhantomJS to fetch a version that has the JavaScript executed. Set the Host HTTP header to use this for more than one domain.",
+  "main": "server.coffee",
+  "author": "Alec Gorge <alecgorge@gmail.com>",
+  "license": "MIT",
+  "readmeFilename": "README.md",
+  "keywords": [
+    "generator",
+    "reverse-proxy",
+    "static",
+    "nginx"
+  ],
+  "dependencies": {
+    "coffee-script": "~1.6.3",
+    "forever": "~0.10.10",
+    "express": "~3.4.6",
+    "phantomjs": "~1.9.2-5",
+    "node-phantom": "alecgorge/node-phantom"
+  },
+  "engines": {
+    "node": ">=0.8.0"
+  },
+  "scripts": {
+    "start": "node_modules/.bin/forever start -c node_modules/.bin/coffee -l forever.log server.coffee",
+    "stop": "node_modules/.bin/forever stop -c node_modules/.bin/coffee -l forever.log server.coffee || true"
+  }
+}
